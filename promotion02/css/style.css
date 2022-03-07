@@ -1,0 +1,410 @@
+
+
+.startPoint{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 100px;
+    bottom: 100px;
+    z-index: 899998989;
+    background: #ffffff;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 2px 2px #0000000c;
+}
+
+
+.startPoint:hover{
+    background: #ebebeb;
+}
+
+
+
+#container{
+width: 100%;
+}
+#section01{
+   Height:2309px;
+}
+
+#section01 .title{
+    left: 256px;
+    top: 117px;
+    position: absolute;
+    display: flex;
+    transform:translateY(-30px);
+    transition: all 1s;
+    opacity: 0;
+}
+#section01 .title.on{
+    transform: none;
+    opacity: 1;
+}
+#section01 .n{
+    margin-right: 9px;
+}
+#section01 .b{
+    margin-right: 50px;
+}
+#section01 .k{
+    margin-right: 2px;
+}
+#section01 .i{
+    margin-right: 9px;
+}
+#section01 .d{
+    margin-right: -4px;
+}
+#section01 .s{
+    margin-right: 21px;
+}
+#section01 .spot{
+    margin-top: 87px;
+}
+
+#section01 .mouse{
+    left: 941px;
+    top: 1566px;
+    position: absolute;
+    transform:translateY(-50px);
+    transition: all 1s;
+    opacity: 0;
+}
+#section01 .mouse.on{
+    transform: none;
+    opacity: 1;
+}
+
+#section01 .check1{
+    left: 1032px;
+    top: 1992px;
+    position: absolute;
+    transform:translateY(-30px);
+    transition: all 0.7s;
+    opacity: 0;
+}
+#section01 .check1.on{
+    opacity: 1;
+    transform: none;
+}
+#section01 .check2{
+    left: 1032px;
+    top: 2066px;
+    position: absolute;
+    transform:translateY(-30px);
+    transition: all 1.4s;
+    opacity: 0;
+}
+#section01 .check2.on{
+    opacity: 1;
+    transform: none;
+}
+#section01 .check3{
+    left: 1032px;
+    top: 2139px;
+    position: absolute;
+    transform:translateY(-30px);
+    transition: all 2.1s;
+    opacity: 0;
+}
+#section01 .check3.on{
+    opacity: 1;
+    transform: none;
+}
+
+#section02{
+    height: 6018px;
+}
+#section02 .color{
+    left: -57px;
+    top: 686px;
+    position: absolute;
+    display: flex;
+    transform:translateY(-30px);
+    transition: all 1s;
+    opacity: 0;
+}
+#section02 .color.on{
+    opacity: 1;
+    transform: none;
+}
+#section02 .color1{
+    margin-right: 111px;
+
+}
+#section02 .color2{
+    margin-right: 196px;
+    margin-top: 86px;
+}
+#section02 .color3{
+    margin-right: -67px;
+    margin-top: 24px;
+}
+#section02 .color4{
+    margin-right: 300px;
+    margin-top: -22px;
+}
+#section02 .color5{
+    margin-top: 31px;
+}
+
+#section02 .main_title{
+    left: 595px;
+    top: 1542px;
+    position: absolute;
+    transform:translateY(-30px);
+    transition: all 1s;
+    opacity: 0;
+}
+#section02 .main_title.on{
+    opacity: 1;
+    transform: none;
+}
+#section02 .visual01{
+    left: 1375px;
+    top: 1540px;
+    position: absolute;
+}
+#section02 .visual01 .visual01img {
+    animation: shake-vertical 6s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+}
+
+@keyframes shake-vertical {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    10%,
+    30%,
+    50%,
+    70% {
+        transform: translateY(-8px);
+    }
+    20%,
+    40%,
+    60% {
+        transform: translateY(8px);
+    }
+    80% {
+        transform: translateY(6.4px);
+    }
+    90% {
+        transform: translateY(-6.4px);
+    }
+}
+
+#section02 .visual02{
+    left: -208px;
+    top: 3942px;
+    position: absolute;
+}
+#section02 .visual02 .visual02img {
+    animation: shake-vertical 6s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+}
+
+#section03{
+    height: 5167px;
+}
+#section03 .s3subtitle{
+    left: 336px;
+    top: 273px;
+    position: absolute;
+    transform:translateY(-30px);
+    transition: all 1s;
+    opacity: 0;
+}
+#section03 .s3subtitle.on{
+    transform: none;
+    opacity: 1;
+}
+#section03 .logo{
+    left: 65px;
+    top: 672px;
+    position: absolute;
+    transform:translateX(-30px);
+    transition: all 1s;
+    opacity: 0;
+}
+#section03 .logo.on{
+    opacity: 1;
+    transform: none;
+}
+#section03 .daisy{
+    left: 586px;
+    top: 1137px;
+    position: absolute;
+    transform: none;
+    animation: rotate_image 10s linear infinite;
+    transform-origin: 50% 50%;
+}
+@keyframes rotate_image {
+    100% {
+        transform: rotate(360deg);}
+    }
+#section03 .text_box{
+    left: 0;
+    top: 1675px;
+    position: absolute;
+    overflow: hidden;
+    display: flex;
+}
+#section03 .text_box>div{
+    margin-right: 100px;
+    animation: txt 10s infinite linear;
+}
+@keyframes txt {
+    to{
+        transform: translateX(-2219px);
+    }
+}
+
+#section03 .subtitle1{
+    left: 1471px;
+    top: 2229px;
+    position: absolute;
+    transform:translateX(50px);
+    transition: all 1s;
+    opacity: 0;
+}
+#section03 .subtitle1.on{
+    opacity: 1;
+    transform: none;
+}
+#section03 .circle{
+    left: 1644px;
+    top: 2922px;
+    position: absolute;
+    transform: none;
+    animation: rotate_image 10s linear infinite;
+    transform-origin: 50% 50%;
+}
+#section03 .subtitle2{
+    left: 147px;
+    top: 3758px;
+    position: absolute;
+    transform:translateX(-50px);
+    transition: all 1s;
+    opacity: 0;
+}
+#section03 .subtitle2.on{
+    opacity: 1;
+    transform: none;
+}
+#section03 .mockup{
+    left: 586px;
+    top: 3403px;
+    position: absolute;
+    transform:translateX(100px);
+    transition: all 1s;
+    opacity: 0;
+}
+#section03 .mockup.on{
+    opacity: 1;
+    transform: none;
+}
+#section03 .drop01{
+    left: 433px;
+    top: 4690px;
+    position: absolute;
+    transition: 1s;
+    opacity: 0;
+}
+#section03 .drop01.on{
+    opacity: 1;
+}
+#section03 .drop02{
+    left: 496px;
+    top: 4760px;
+    position: absolute;
+    transition: 2s;
+    opacity: 0;
+}
+#section03 .drop02.on{
+    opacity: 1;
+}
+#section04{
+    height: 4062px;
+}
+#section04 .s4subtitle{
+    left: 316px;
+    top: 207px;
+    position: absolute;
+    transform:translateY(-30px);
+    transition: all 1s;
+    opacity: 0;
+}
+#section04 .s4subtitle.on{
+    transform: none;
+    opacity: 1;
+}
+#section04 .s4visual01{
+    left: 90px;
+    top: 628px;
+    position: absolute;
+}
+#section04 .s4visual01 .s4visual01img{
+    animation: heartbeat 1.5s ease-in-out infinite both;
+}
+@keyframes heartbeat {
+    from {
+        transform: scale(1);
+        transform-origin: center center;
+        animation-timing-function: ease-out;
+    }
+    10% {
+        transform: scale(0.91);
+        animation-timing-function: ease-in;
+    }
+    17% {
+        transform: scale(0.98);
+        animation-timing-function: ease-out;
+    }
+    33% {
+        transform: scale(0.87);
+        animation-timing-function: ease-in;
+    }
+    45% {
+        transform: scale(1);
+        animation-timing-function: ease-out;
+    }
+}
+
+#section04 .s4visual02{
+    left: 1785px;
+    top: 1186px;
+    position: absolute;
+}
+#section04 .s4visual02 .s4visual02img{
+    animation: heartbeat 1.5s ease-in-out infinite both;
+}
+
+#section04 .s4visual03{
+    left: 108px;
+    top: 1307px;
+    position: absolute;
+}
+#section04 .s4visual03 .s4visual03img{
+    animation: heartbeat 1.5s ease-in-out infinite both;
+}
+
+#section04 .s4visual04 {
+    left: 236px;
+    top: 1855px;
+    position: absolute;
+}
+#section04 .s4visual04 .s4visual04img{
+    animation: heartbeat 1.5s ease-in-out infinite both;
+}
+#section04 .s4visual05{
+    left: 1494px;
+    top: 1822px;
+    position: absolute;
+}
+#section04 .s4visual05 .s4visual05img{
+    animation: heartbeat 1.5s ease-in-out infinite both;
+}

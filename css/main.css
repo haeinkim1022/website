@@ -1,0 +1,945 @@
+#cursor{
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  z-index: 1000;
+  pointer-events: none;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+#header {
+  position: fixed;
+  z-index: 99999;
+  align-items: center;
+}
+@font-face {
+  font-family: "Montserrat Medium";
+  src: url("../font/Montserrat-Medium.ttf") format("woff2");
+}
+@font-face {
+  font-family: "NewYork";
+  src: url("../font/NewYork.otf") format("woff2");
+}
+/** {*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*}*/
+a,
+a:link {
+  color: #c00000;
+  text-decoration: none;
+  font-family: "Montserrat Medium";
+  font-weight: 500;
+}
+.menu4 {
+  /*list-style: none;*/
+  margin: 3.5vh 2.5vw auto;
+  display: flex;
+  justify-content: center;
+}
+.menu4>li> a {
+  display: block;
+  padding: 0vw 0.7vw 0vw;
+  position: relative;
+  font-size: 18px;
+  overflow: hidden;
+}
+.menu4>li>a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+}
+.menu4>li>a::after {
+  width: 0;
+  height: 0;
+  background: #d00000;
+  left: 25%;
+  bottom: 25%;
+  border-radius: 100vw;
+}
+.menu4>li>a:hover::after {
+  width: 100%;
+  left: 0;
+  transition: all 0.7s;
+}
+.menu4>li>a:hover {
+  color: #fff;
+}
+.menu4>li>a:hover::after {
+  width: 200%;
+  height: 200%;
+  left: 0;
+  bottom: 0;
+  transform: translate(-25%, 25%);
+  transition: all 0.7s;
+}
+#header .profile{
+  margin-right: 1304px;
+}
+#header .deps{
+  position: absolute;
+  top: 0;
+  right: 44px;
+  display: none;
+  margin-top: 30px;
+}
+#header .deps>li>a {
+  display: block;
+  padding: 12px;
+}
+#header .p01{
+  margin-top: 30px;
+}
+
+#header .promotion:hover .deps{
+  display: block;
+}
+
+#section01 {
+  background: #f6ebd6;
+  height: 100vw;
+}
+#section01 .s1title {
+  left: 437px;
+  top: 259px;
+  position: absolute;
+  text-align: center;
+}
+#section01 .title {
+  transform: translateY(100px);
+  transition: all 1s;
+  opacity: 0;
+}
+#section01 .title.on {
+  transform: none;
+  opacity: 1;
+}
+#section01 .name .name01img {
+  margin-bottom: 120px;
+  opacity: 0;
+  animation: scale-in-hor-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+#section01 .name .name01img.on {
+  transform: none;
+  opacity: 1;
+}
+@keyframes scale-in-hor-center {
+  0% {
+    transform: scaleX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+
+#section01 .sub {
+  left: 60px;
+  top: 820px;
+  position: absolute;
+}
+#section01 .arrow .arrow01img {
+  left: 1639px;
+  top: 780px;
+  position: absolute;
+  animation: shake-vertical 5s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
+  opacity: 0;
+}
+#section01 .arrow .arrow01img.on {
+  transform: none;
+  opacity: 1;
+}
+@keyframes shake-vertical {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  10%,
+  30%,
+  50%,
+  70% {
+    transform: translateY(-8px);
+  }
+  20%,
+  40%,
+  60% {
+    transform: translateY(8px);
+  }
+  80% {
+    transform: translateY(6.4px);
+  }
+  90% {
+    transform: translateY(-6.4px);
+  }
+}
+#section02 {
+  background: #f6ebd6;
+  height: 100vw;
+}
+
+#section02 .title01 {
+  left: 455px;
+  top: 255px;
+  position: absolute;
+  transform: translateY(50px);
+  transition: all 1s;
+  opacity: 0;
+  transition-delay: 0.8s;
+  z-index: 10;
+}
+
+#section02 .title01.on {
+  opacity: 1;
+  transform: translateY(0);
+}
+#section02 .title02 {
+  left: 250px;
+  top: 413px;
+  position: absolute;
+  transform: translateY(50px);
+  transition: all 1s;
+  opacity: 0;
+  transition-delay: 1s;
+  z-index: 10;
+}
+#section02 .title02.on {
+  opacity: 1;
+  transform: none;
+}
+#section02 .title03 {
+  left: 587px;
+  top: 573px;
+  position: absolute;
+  transform: translateY(50px);
+  transition: all 1s;
+  opacity: 0;
+  transition-delay: 1s;
+  z-index: 10;
+}
+#section02 .title03.on {
+  opacity: 1;
+  transform: none;
+}
+#section02 .bgc01 .bgc01img {
+  position: absolute;
+  left: 560px;
+  top: 222px;
+  transform: scale(0);
+  opacity: 0;
+  transition: all 0.5s;
+}
+#section02 .bgc01 .bgc01img.on {
+  opacity: 1;
+  transform: scale(1);
+}
+
+#section02 .bgc02 .bgc02img {
+  left: 379px;
+  top: 263px;
+  position: absolute;
+  opacity: 0;
+  transform: scale(0);
+  transition: all 0.9s;
+}
+#section02 .bgc02 .bgc02img.on {
+  opacity: 1;
+  transform: scale(1);
+}
+
+#section02 .more {
+  left: 1369px;
+  top: 692px;
+  position: absolute;
+}
+
+#section02 .circle {
+  left: 559px;
+  top: 223px;
+  position: absolute;
+  offset: path(
+      "M54.35 357.338C278.598 100.27 574.097 13.9224 693.815 2.88208C970.182 -16.7225 852.951 169.592 759.789 265.2C520.44 491.447 248.032 558.078 141.747 563.113C-61.3032 563.435 -1.12196 426.064 54.35 357.338Z"
+    )
+    auto;
+  animation: moveto 8s linear infinite;
+  animation-delay: 1s;
+  opacity: 0;
+}
+#section02 .circle.on {
+  opacity: 1;
+}
+@keyframes moveto {
+  0% {
+    offset-distance: 0;
+  }
+  100% {
+    offset-distance: 100%;
+  }
+}
+#section02 .circle01 {
+  left: 382px;
+  top: 264px;
+  position: absolute;
+  offset: path(
+      "M107.403 259.111C469.677 30.9678 874.933 -7.43045 1032.28 1.88836C1393.82 29.5116 1189.6 202.728 1042.29 285.884C669.374 479.383 299.491 501.306 161.165 488.08C-100.442 453.155 16.321 320.882 107.403 259.111Z"
+    )
+    auto;
+  animation: moveto 7s linear infinite;
+  animation-delay: 1s;
+  opacity: 0;
+}
+#section02 .circle01.on {
+  opacity: 1;
+}
+
+#section02 .circle02 {
+  left: 1324px;
+  top: 641px;
+  position: absolute;
+  opacity: 0.8;
+  transform: scale(1);
+  transition: transform 1s;
+}
+#section02 .circle02:hover {
+  transform: scale(1.5, 1.5);
+  transition: transform 1s linear;
+  cursor: pointer;
+  opacity: 1;
+}
+
+#section02 .scroll .scroll01img {
+  left: 50%;
+  bottom: 50px;
+  position: absolute;
+  transform: translate(-50%, 0);
+  animation: shake-vertical 5s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
+  opacity: 0;
+}
+#section02 .scroll .scroll01img.on {
+  transform: none;
+  opacity: 1;
+  animation-delay: 1.5s;
+}
+#section02 .pagination {
+  left: 10px;
+  top: 300px;
+  position: absolute;
+}
+
+#section03 {
+  background: #fff;
+}
+
+#section03 .bg {
+  display: flex;
+  position: relative;
+  height: 100vh;
+}
+#section03 .bg01 {
+  width: 50vw;
+  background: #fff;
+}
+#section03 .bg02 {
+  width: 50vw;
+  background: #f2f2f2;
+}
+
+#section03 .s3pic01 {
+  left: 243px;
+  bottom: 173px;
+  position: absolute;
+  transition: transform 2.3s;
+  transform: scale(1.2, 1.2);
+}
+
+#section03 .s3pic01.on {
+  transform: scale(1, 1);
+  opacity: 1;
+}
+
+#section03 .title {
+  left: 365px;
+  bottom: 73px;
+  position: absolute;
+  transform: translateY(50px);
+  transition: all 1.3s;
+  opacity: 0;
+}
+#section03 .title.on {
+  transform: none;
+  opacity: 1;
+}
+#section03 .s3box {
+  width: 960px;
+  height: 297px;
+  right: 0;
+  bottom: 0;
+  overflow: hidden; /* div 박스 사이즈를 넘어간 값은 숨긴다*/
+  position: absolute;
+}
+#section03 .s3pic02 {
+  width: 960px;
+  height: 297px;
+  position: absolute;
+  transition: transform 2.3s;
+}
+
+#section03 .s3pic02.on {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+#section03 .text {
+  right: 210px;
+  top: 113px;
+  position: absolute;
+}
+
+#section03 .s3text01 {
+  margin-bottom: 70px;
+  transform: translateY(50px);
+  transition: all 1.3s;
+  opacity: 0;
+}
+#section03 .s3text01.on {
+  transform: none;
+  opacity: 1;
+}
+#section03 .s3text02 {
+  transform: translateY(50px);
+  transition: all 1s;
+  opacity: 0;
+  transition-delay: 0.3s;
+}
+#section03 .s3text02.on {
+  transform: none;
+  opacity: 1;
+}
+
+#section03 .button .line {
+  width: 0;
+  height: 2px;
+  background: #d00000;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: all 1s;
+}
+
+#section03 .button:hover .line {
+  width: 100%;
+}
+
+#section03 .button {
+  width: 262px;
+  height: 38px;
+  right: 174px;
+  top: 465px;
+  position: absolute;
+  cursor: pointer;
+}
+
+#section03 .after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+#section03 .button:hover .after {
+  display: block;
+}
+#section03 .pagination {
+  left: 10px;
+  top: 300px;
+  position: absolute;
+}
+
+#section04 {
+  background: #fff;
+}
+#section04 .bg {
+  display: flex;
+  position: relative;
+  height: 100vh;
+}
+#section04 .bg01 {
+  width: 50vw;
+  background: #fff;
+}
+#section04 .bg02 {
+  width: 50vw;
+  background: #fcf5e7;
+}
+
+#section04 .s4pic01 {
+  left: 243px;
+  bottom: 173px;
+  position: absolute;
+  transition: transform 2.3s;
+  transform: scale(1.2, 1.2);
+}
+#section04 .s4pic01.on {
+  transform: scale(1, 1);
+  opacity: 1;
+}
+#section04 .s4box {
+  width: 960px;
+  height: 297px;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  position: absolute;
+}
+#section04 .s4pic02 {
+  width: 960px;
+  height: 297px;
+  position: absolute;
+  transition: transform 2.3s;
+}
+#section04 .s4pic02.on {
+  opacity: 1;
+  transform: scale(1.1);
+}
+#section04 .title {
+  left: 287px;
+  bottom: 73px;
+  position: absolute;
+  transform: translateY(50px);
+  transition: all 1.3s;
+  opacity: 0;
+}
+#section04 .title.on {
+  transform: none;
+  opacity: 1;
+}
+#section04 .s4pic02 {
+  right: 0;
+  bottom: 0;
+  position: absolute;
+}
+#section04 .text {
+  right: 96px;
+  top: 113px;
+  position: absolute;
+}
+#section04 .s4text01 {
+  margin-bottom: 70px;
+  transform: translateY(50px);
+  transition: all 1.3s;
+  opacity: 0;
+}
+#section04 .s4text01.on {
+  transform: none;
+  opacity: 1;
+}
+#section04 .s4text02 {
+  transform: translateY(50px);
+  transition: all 1s;
+  opacity: 0;
+  transition-delay: 0.3s;
+}
+#section04 .s4text02.on {
+  transform: none;
+  opacity: 1;
+}
+#section04 .button .line {
+  width: 0;
+  height: 2px;
+  background: #d00000;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: all 1s;
+}
+
+#section04 .button:hover .line {
+  width: 100%;
+}
+
+#section04 .button {
+  width: 262px;
+  height: 38px;
+  right: 174px;
+  top: 465px;
+  position: absolute;
+  cursor: pointer;
+}
+
+#section04 .after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+#section04 .button:hover .after {
+  display: block;
+}
+#section04 .pagination {
+  left: 10px;
+  top: 300px;
+  position: absolute;
+}
+#section05 {
+  background: #fff;
+}
+#section05 .bg {
+  display: flex;
+  position: relative;
+  height: 100vh;
+}
+#section05 .bg01 {
+  width: 50vw;
+  background: #f2f2f2;
+}
+#section05 .bg02 {
+  width: 50vw;
+  background: #282828;
+}
+#section05 .s5pic01 {
+  right: 234px;
+  bottom: 169px;
+  position: absolute;
+  transition: transform 2.3s;
+  transform: scale(1.2, 1.2);
+}
+#section05 .s5pic01.on {
+  transform: scale(1, 1);
+  opacity: 1;
+}
+#section05 .s5box {
+  width: 960px;
+  height: 297px;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  position: absolute;
+}
+#section05 .s5pic02 {
+  position: absolute;
+  transition: transform 2.3s;
+}
+#section05 .s5pic02.on {
+  opacity: 1;
+  transform: scale(1.1);
+}
+#section05 .title {
+  right: 353px;
+  bottom: 80px;
+  position: absolute;
+  transform: translateY(50px);
+  transition: all 1.3s;
+  opacity: 0;
+}
+#section05 .title.on {
+  transform: none;
+  opacity: 1;
+}
+#section05 .text {
+  left: 96px;
+  top: 113px;
+  position: absolute;
+}
+#section05 .s5text01 {
+  margin-bottom: 70px;
+  transform: translateY(50px);
+  transition: all 1.3s;
+  opacity: 0;
+}
+#section05 .s5text01.on {
+  transform: none;
+  opacity: 1;
+}
+#section05 .s5text02 {
+  transform: translateY(50px);
+  transition: all 1s;
+  opacity: 0;
+  transition-delay: 0.3s;
+}
+#section05 .s5text02.on {
+  transform: none;
+  opacity: 1;
+}
+#section05 .button .line {
+  width: 0;
+  height: 2px;
+  background: #d00000;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: all 1s;
+}
+
+#section05 .button:hover .line {
+  width: 100%;
+}
+
+#section05 .button {
+  width: 262px;
+  height: 38px;
+  left: 96px;
+  top: 493px;
+  position: absolute;
+  cursor: pointer;
+}
+
+#section05 .after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+#section05 .button:hover .after {
+  display: block;
+}
+#section05 .pagination {
+  left: 10px;
+  top: 300px;
+  position: absolute;
+}
+#section06 {
+  background: #fff;
+}
+#section06 .bg {
+  display: flex;
+  position: relative;
+  height: 100vh;
+}
+#section06 .bg01 {
+  width: 50vw;
+  background: #fcf3e2;
+}
+#section06 .bg02 {
+  width: 50vw;
+  background: #f2f2f2;
+}
+#section06 .s6box01 {
+  width: 960px;
+  height: 297px;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  position: absolute;
+}
+#section06 .s6pic01 {
+  position: absolute;
+  transition: transform 2.3s;
+}
+#section06 .s6pic01.on {
+  opacity: 1;
+  transform: scale(1.1);
+}
+#section06 .text {
+  left: 96px;
+  top: 393px;
+  position: absolute;
+}
+#section06 .s6text01 {
+  margin-bottom: 70px;
+  transform: translateY(50px);
+  transition: all 1.3s;
+  opacity: 0;
+}
+#section06 .s6text01.on {
+  transform: none;
+  opacity: 1;
+}
+#section06 .s6text02 {
+  transform: translateY(50px);
+  transition: all 1s;
+  opacity: 0;
+  transition-delay: 0.3s;
+}
+#section06 .s6text02.on {
+  transform: none;
+  opacity: 1;
+}
+#section06 .button .line {
+  width: 0;
+  height: 2px;
+  background: #d00000;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: all 1s;
+}
+
+#section06 .button:hover .line {
+  width: 100%;
+}
+
+#section06 .button {
+  width: 262px;
+  height: 38px;
+  left: 95px;
+  top: 796px;
+  position: absolute;
+  cursor: pointer;
+}
+
+#section06 .after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+#section06 .button:hover .after {
+  display: block;
+}
+#section06 .s6box02 {
+  width: 960px;
+  height: 297px;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  position: absolute;
+}
+#section06 .s6pic02 {
+  position: absolute;
+  transition: transform 2.3s;
+}
+#section06 .s6pic02.on {
+  opacity: 1;
+  transform: scale(1.1);
+}
+#section06 .text02 {
+  right: 194px;
+  top: 113px;
+  position: absolute;
+}
+#section06 .s6text03 {
+  margin-bottom: 70px;
+  transform: translateY(50px);
+  transition: all 1.3s;
+  opacity: 0;
+}
+#section06 .s6text03.on {
+  transform: none;
+  opacity: 1;
+}
+#section06 .s6text04 {
+  transform: translateY(50px);
+  transition: all 1s;
+  opacity: 0;
+  transition-delay: 0.3s;
+}
+#section06 .s6text04.on {
+  transform: none;
+  opacity: 1;
+}
+
+#section06 .button02 .line {
+  width: 0;
+  height: 2px;
+  background: #d00000;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: all 1s;
+}
+
+#section06 .button02:hover .line {
+  width: 100%;
+}
+
+#section06 .button02 {
+  width: 262px;
+  height: 38px;
+  right: 174px;
+  top: 465px;
+  position: absolute;
+  cursor: pointer;
+}
+
+#section06 .after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+#section06 .button02:hover .after {
+  display: block;
+}
+#section06 .pagination {
+  left: 10px;
+  top: 300px;
+  position: absolute;
+}
+
+#profile {
+  position: fixed;
+  width: 100vw;
+  height: 980px;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  opacity: 0;
+  background: #f6ebd6;
+  transition: all 0.5s;
+}
+
+#profile.on {
+  z-index: 99;
+  opacity: 1;
+}
+
+#profile .circle02:hover {
+  transform: scale(1.5, 1.5);
+  transition: transform 1s linear;
+  cursor: pointer;
+  opacity: 1;
+}
+#profile .line_text {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  transform: translate(0, 40%);
+}
+#profile .svg {
+  width: 592px;
+  height: 665px;
+  overflow: visible;
+}
+
+#profile text {
+  font-family: NewYork;
+  font-size: 80px;
+  letter-spacing: 3.5px;
+}
+
+
+#profile .pic {
+  position: absolute;
+  left: 50%;
+  bottom: 52px;
+  transform: translate(-50%, 0);
+  z-index: 9999;
+}
+
+#profile .scroll-container {
+  width: 100vw;
+  height: 100vh;
+  left: 140px;
+  bottom: 610px;
+  position: relative;
+}
+
+#profile .text_box {
+  top: 10px;
+  height: 200vh;
+}
+#profile .back {
+  left: 1260px;
+  top: 1506px;
+  position: absolute;
+}
+#profile .circle02 {
+  left: 1224px;
+  top: 1441px;
+  position: absolute;
+  opacity: 0.7;
+  transition: transform 1s;
+}
+
