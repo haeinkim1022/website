@@ -40,7 +40,7 @@ a:link {
 }
 .menu4>li> a {
   display: block;
-  padding: 0vw 0.7vw 0vw;
+  padding: 0 0.7vw 0;
   position: relative;
   font-size: 18px;
   overflow: hidden;
@@ -81,23 +81,54 @@ a:link {
 }
 #header .deps{
   position: absolute;
-  top: 0;
+  top: 35px;
   right: 44px;
   display: none;
-  margin-top: 30px;
+  overflow: hidden;
+  padding: 0 0.7vw 0;
+
 }
 #header .deps>li>a {
   display: block;
-  padding: 12px;
 }
 #header .p01{
-  margin-top: 30px;
+  /*top: 20px;*/
 }
 
 #header .promotion:hover .deps{
   display: block;
 }
-
+.deps>li>a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+}
+.deps>li>a::after {
+  width: 0;
+  height: 0;
+  background: #d00000;
+  left: 25%;
+  bottom: 25%;
+  border-radius: 100vw;
+}
+.deps>li>a:hover::after {
+  width: 100%;
+  left: 0;
+  transition: all 0.7s;
+}
+.deps>li>a:hover {
+  color: #fff;
+}
+.deps>li>a:hover::after {
+  width: 200%;
+  height: 200%;
+  left: 0;
+  bottom: 0;
+  transform: translate(-25%, 25%);
+  transition: all 0.7s;
+}
 #section01 {
   background: #f6ebd6;
   height: 100vw;

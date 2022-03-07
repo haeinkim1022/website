@@ -45,61 +45,133 @@ window.addEventListener('DOMContentLoaded', function () {
 
 
 
-        if(scrollTop >= 900){
+        if(scrollTop >= 1375){
 
-            $('.mouse').addClass('on');
+            $('.logo01').addClass('on');
         }
-        if(scrollTop >= 1300){
+        if(scrollTop >= 1375){
 
-            $('.check1').addClass('on');
+            $('.text01').addClass('on');
         }
-        if(scrollTop >= 1300){
+        if(scrollTop >= 1960){
 
-            $('.check2').addClass('on');
+            $('.mockup01img').addClass('on');
         }
-        if(scrollTop >= 1300){
+        if(scrollTop >= 3025){
 
-            $('.check3').addClass('on');
+            $('.mockup02').addClass('on');
         }
-        if(scrollTop >= 2420){
+        if(scrollTop >= 3200){
 
-            $('.color').addClass('on');
+            $('.text02').addClass('on');
         }
-        if(scrollTop >= 3270){
+        if(scrollTop >= 3200){
 
-            $('.main_title').addClass('on');
+            $('.text03').addClass('on');
         }
-        if(scrollTop >= 8000){
+        if(scrollTop >= 4750){
 
-            $('.s3subtitle').addClass('on');
+            $('.s2sub01img').addClass('on');
         }
-        if(scrollTop >= 8350){
+        if(scrollTop >= 4750){
 
-            $('.logo').addClass('on');
+            $('.s2text01').addClass('on');
         }
-        if(scrollTop >= 10250){
+        if(scrollTop >= 4750){
 
-            $('.subtitle1').addClass('on');
+            $('.s2text02').addClass('on');
         }
-        if(scrollTop >= 11393){
+        if(scrollTop >= 5250){
 
-            $('.subtitle2').addClass('on');
+            $('.s2text03').addClass('on');
+        }
+        if(scrollTop >= 5650){
+
+            $('.s2color01').addClass('on');
+        }
+        if(scrollTop >= 5650){
+
+            $('.s2color02').addClass('on');
+        }
+        if(scrollTop >= 5650){
+
+            $('.s2color03').addClass('on');
+        }
+        if(scrollTop >= 5650){
+
+            $('.s2color04').addClass('on');
+        }
+        if(scrollTop >= 6625){
+
+            $('.s2title01').addClass('on');
+        }
+        if(scrollTop >= 6900){
+
+            $('.s2mockup01img').addClass('on');
+        }
+        if(scrollTop >= 8875){
+
+            $('.s2text04').addClass('on');
+        }
+        if(scrollTop >= 9750){
+
+            $('.s3sub01img').addClass('on');
+        }
+        if(scrollTop >= 9750){
+
+            $('.s3text02').addClass('on');
+        }
+        if(scrollTop >= 10242){
+
+            $('.s3circle03img').addClass('on');
         }
         if(scrollTop >= 11000){
 
-            $('.mockup').addClass('on');
+            $('.s3text03').addClass('on');
         }
-        if(scrollTop >= 12250){
+        if(scrollTop >= 11291){
 
-            $('.drop01').addClass('on');
+            $('.s3text04').addClass('on');
         }
-        if(scrollTop >= 12400){
+        if(scrollTop >= 11291){
 
-            $('.drop02').addClass('on');
+            $('.s3text05').addClass('on');
         }
-        if(scrollTop >= 12894){
+        if(scrollTop >= 11291){
 
-            $('.s4subtitle').addClass('on');
+            $('.s3text06').addClass('on');
+        }
+        if(scrollTop >= 12914){
+
+            $('.s3text07').addClass('on');
+        }
+        if(scrollTop >= 12914){
+
+            $('.s3title01').addClass('on');
+        }
+        if(scrollTop >= 13058){
+
+            $('.s3circle05img').addClass('on');
+        }
+        if(scrollTop >= 14000){
+
+            $('.s3circle06img').addClass('on');
+        }
+        if(scrollTop >= 17672){
+
+            $('.s4mockup01img').addClass('on');
+        }
+        if(scrollTop >= 20138){
+
+            $('.s4mockup02').addClass('on');
+        }
+        if(scrollTop >= 20138){
+
+            $('.s4text01').addClass('on');
+        }
+        if(scrollTop >= 22660){
+
+            $('.name01img').addClass('on');
         }
     });
 
@@ -122,8 +194,40 @@ window.addEventListener('DOMContentLoaded', function () {
 
 
         setTimeout(()=>{
-            $('.title').addClass('on');
-        },200)
+            $('.title01').addClass('on');
+        },500);
+        setTimeout(()=>{
+            $('.title02').addClass('on');
+        },500)
+        setTimeout(()=>{
+            $('.title03').addClass('on');
+        },500)
+/*
+
+        gsap.to(".box2", {
+            x: 400,
+            scrollTrigger: {
+                trigger: ".box2",
+                start: "top center",
+                end: "top 100px",
+                scrub: 1,
+                markers: false,
+                id: "scrub"
+            }
+        });
+
+        gsap.to(".box3", {
+            x: 400,
+            rotation: 360,
+            scrollTrigger: {
+                trigger: ".box3",
+                start: "top center",
+                end: "top 100px",
+                scrub: 1,
+                markers: true,
+                id: "scrub"
+            }
+        });*/
 
     })();
 
