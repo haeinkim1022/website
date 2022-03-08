@@ -76,28 +76,39 @@ a:link {
   transform: translate(-25%, 25%);
   transition: all 0.7s;
 }
+
 #header .profile{
-  margin-right: 1304px;
+  margin-right: 1218px;
 }
-#header .deps{
+
+#header .p01{
   position: absolute;
-  top: 35px;
-  right: 44px;
-  display: none;
   overflow: hidden;
   padding: 0 0.7vw 0;
-
+  color: #c00000;
+  font-family: "Montserrat Medium";
+  font-weight: 500;
+  display: none;
+  bottom: -17px;
 }
-#header .deps>li>a {
+#header .p02{
+  position: absolute;
+  overflow: hidden  ;
+  padding: 0 0.7vw 0;
+  color: #c00000;
+  font-family: "Montserrat Medium";
+  font-weight: 500;
+  display: none;
+  bottom: -34px;
+}
+
+#header .promotion:hover .p01{
   display: block;
 }
-#header .p01{
-  /*top: 20px;*/
-}
-
-#header .promotion:hover .deps{
+#header .promotion:hover .p02{
   display: block;
 }
+
 .deps>li>a::after {
   content: "";
   display: block;
@@ -169,7 +180,7 @@ a:link {
 }
 
 #section01 .sub {
-  left: 60px;
+  left: 52px;
   top: 820px;
   position: absolute;
 }
@@ -330,7 +341,7 @@ a:link {
   left: 1324px;
   top: 641px;
   position: absolute;
-  opacity: 0.8;
+  opacity: 0.5;
   transform: scale(1);
   transition: transform 1s;
 }
