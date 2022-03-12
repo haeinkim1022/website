@@ -23,7 +23,139 @@
     background: #ebebeb;
 }
 
+@font-face {
+    font-family: "Montserrat Medium";
+    src: url("../../font/Montserrat-Medium.ttf") format("woff2");
+}
+#header{
+    z-index : 99999999999;
+    position: fixed;
+    top : 0;
+    background-color : rgba(246,235,214,0.9);
+}
 
+a,
+a:link {
+    color: #c00000;
+    text-decoration: none;
+    font-family: "Montserrat Medium";
+    font-weight: 500;
+}
+
+.menu4 {
+    /*list-style: none;*/
+    margin: 1.5vh 2.5vw;
+    display: flex;
+    justify-content: center;
+
+}
+.menu4>li> a {
+    display: block;
+    padding: 0 0.7vw 0;
+    position: relative;
+    font-size: 18px;
+    overflow: hidden;
+}
+.menu4>li>a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+}
+.menu4>li>a::after {
+    width: 0;
+    height: 0;
+    background: #d00000;
+    left: 25%;
+    bottom: 25%;
+    border-radius: 100vw;
+}
+.menu4>li>a:hover::after {
+    width: 100%;
+    left: 0;
+    transition: all 0.7s;
+}
+.menu4>li>a:hover {
+    color: #fff;
+}
+.menu4>li>a:hover::after {
+    width: 200%;
+    height: 200%;
+    left: 0;
+    bottom: 0;
+    transform: translate(-25%, 25%);
+    transition: all 0.7s;
+}
+
+#header .profile{
+    margin-right: 1218px;
+}
+
+#header .p01{
+    position : relative;
+    overflow: hidden;
+    padding: 0 0.7vw 0;
+    color: #c00000;
+    font-family: "Montserrat Medium";
+    font-weight: 500;
+    display: block;
+    margin : 5px 5px 5px 5px;
+}
+#header .p02{
+    position : relative;
+    overflow: hidden;
+    padding: 0 0.7vw 0;
+    color: #c00000;
+    font-family: "Montserrat Medium";
+    font-weight: 500;
+    display: block;
+    margin : 5px 5px 5px 5px;
+}
+
+.deps {
+    background-color : rgba(246,235,214);
+    position : fixed;
+    display : block;
+    visibility: hidden;
+}
+
+.promotion:hover .deps {
+    visibility: visible;
+}
+
+.deps>li>a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+}
+.deps>li>a::after {
+    width: 0;
+    height: 0;
+    background: #d00000;
+    left: 25%;
+    bottom: 25%;
+    border-radius: 100vw;
+}
+.deps>li>a:hover::after {
+    width: 100%;
+    left: 0;
+    transition: all 0.7s;
+}
+.deps>li>a:hover {
+    color: #fff;
+    overflow : hidden;
+}
+.deps>li>a:hover::after {
+    width: 200%;
+    height: 200%;
+    left: 0;
+    bottom: 0;
+    transform: translate(-25%, 25%);
+    transition: all 0.7s;
+}
 
 #container{
 width: 100%;
@@ -407,4 +539,71 @@ width: 100%;
 }
 #section04 .s4visual05 .s4visual05img{
     animation: heartbeat 1.5s ease-in-out infinite both;
+}
+#section05{
+    height: 326px;
+    background: #000;
+}
+#section05 .footer{
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+#section05 .title{
+    right: 212px;
+    top: 128px;
+    position: absolute;
+}
+#section05 .name{
+    right: 778px;
+    top: 110px;
+    position: absolute;
+}
+#section05 .name .name01img{
+    opacity: 0;
+}
+#section05 .name .name01img.on{
+    animation: scale-up-hor-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    opacity: 1;
+}
+@keyframes scale-up-hor-center {
+    0% {
+        transform: scaleX(0.4);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+#section05 .hover_box{
+    right: 138px;
+    top: 194px;
+    position: absolute;
+    cursor: pointer;
+}
+#section05 .after{
+    right: 0;
+    top: 0;
+    position: absolute;
+    display: none;
+}
+#section05 .hover_box:hover .after {
+    display: block;
+    transition: 1s;
+}
+#section05 .hover_box2{
+    left: 131px;
+    top: 194px;
+    position: absolute;
+    cursor: pointer;
+}
+#section05 .after2{
+    right: 0;
+    top: 0;
+    position: absolute;
+    display: none;
+}
+#section05 .hover_box2:hover .after2{
+    display: block;
+    transition: 1s;
 }
