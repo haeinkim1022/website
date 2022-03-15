@@ -185,6 +185,51 @@ window.addEventListener('DOMContentLoaded', function () {
 
             $('.s4arrow01').addClass('on');
         }
+        if(scrollTop >= 19460){
+
+            $('.s5title').addClass('on');
+        }
+        if(scrollTop >= 19460){
+
+            $('.s5text').addClass('on');
+        }
+        if(scrollTop >= 21377){
+
+            $('.s5headphone').addClass('on');
+        }
+        if(scrollTop >= 22400){
+
+            $('.s5headphone02').addClass('on');
+        }
+        if(scrollTop >= 25460){
+
+            $('.s6pic02').addClass('on');
+        }
+        if(scrollTop >= 26139){
+
+            $('.s6title').addClass('on');
+        }
+        if(scrollTop >= 28510){
+
+            $('.s7title01img').addClass('on');
+        }
+        if(scrollTop >= 28510){
+
+            $('.s7title02img').addClass('on');
+        }
+        if(scrollTop >= 32500){
+
+            $('.s8title').addClass('on');
+        }
+        if(scrollTop >= 32500){
+
+            $('.s8text').addClass('on');
+        }
+        if(scrollTop >= 36690){
+
+            $('.name01img').addClass('on');
+        }
+
 
     });
 
