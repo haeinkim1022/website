@@ -147,11 +147,6 @@ a:link {
   transition: all 0.5s;
 }
 
-#profile.on {
-  z-index: 99;
-  opacity: 1;
-}
-
 #profile .circle02:hover {
   transform: scale(1.5, 1.5);
   transition: transform 1s linear;
@@ -162,7 +157,7 @@ a:link {
   justify-content: center;
   position: relative;
   transform: translate(0, 40%);
-  bottom: -5px;
+  bottom: 0;
 }
 #profile .svg {
   width: 592px;
@@ -180,7 +175,7 @@ a:link {
 #profile .pic {
   position: absolute;
   left: 50%;
-  bottom: -30px;
+  bottom: -28px;
   transform: translate(-50%, 0);
   z-index: 9999;
 }
