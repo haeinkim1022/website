@@ -625,9 +625,9 @@ width: 100%;
 
 #section03 .s3txt_box{
     width: 100vw;
-    height: 800px;
+    height: 21px;
     position: absolute;
-    left: 1px;
+    left: 0;
     top: 28px;
     overflow: hidden;
 }
@@ -642,7 +642,7 @@ width: 100%;
     }
 }
 
-#section03 .s3text02{
+#section03 .s3contents02{
     position: absolute;
     left: 206px;
     top: 409px;
@@ -650,7 +650,7 @@ width: 100%;
     transform:translateY(150px);
     transition: all 1s;
 }
-#section03 .s3text02.on{
+#section03 .s3contents02.on{
     transform:none;
     Opacity:1;
 }
@@ -929,7 +929,7 @@ width: 100%;
     position: absolute;
 }
 #section05 .name .name01img{
-    opacity: 0;
+    opacity: 1;
 }
 #section05 .name .name01img.on{
     animation: scale-up-hor-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;

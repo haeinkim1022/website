@@ -1116,7 +1116,7 @@ width: 100%;
     position: absolute;
 }
 #section09 .name .name01img{
-    opacity: 0;
+    opacity: 1;
 }
 #section09 .name .name01img.on{
     animation: scale-up-hor-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;

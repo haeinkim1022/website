@@ -361,7 +361,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
             $('.s5text05').addClass('on');
         }
-        if(scrollTop >= 21910){
+        if(scrollTop >= 21810){
 
             $('.name01img').addClass('on');
         }

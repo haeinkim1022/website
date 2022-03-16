@@ -225,7 +225,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
             $('.s8text').addClass('on');
         }
-        if(scrollTop >= 36690){
+        if(scrollTop >= 36590){
 
             $('.name01img').addClass('on');
         }

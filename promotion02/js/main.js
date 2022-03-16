@@ -119,7 +119,7 @@ window.addEventListener('DOMContentLoaded', function () {
         }
         if(scrollTop >= 9750){
 
-            $('.s3text02').addClass('on');
+            $('.s3contents02').addClass('on');
         }
         if(scrollTop >= 10242){
 
@@ -169,7 +169,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
             $('.s4text01').addClass('on');
         }
-        if(scrollTop >= 22660){
+        if(scrollTop >= 22560){
 
             $('.name01img').addClass('on');
         }

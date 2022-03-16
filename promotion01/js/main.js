@@ -101,7 +101,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
             $('.s4subtitle').addClass('on');
         }
-        if(scrollTop >= 16950){
+        if(scrollTop >= 16850){
 
             $('.name01img').addClass('on');
         }

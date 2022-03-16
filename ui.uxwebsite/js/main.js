@@ -231,7 +231,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
             $('.s11text01img').addClass('on');
         }
-        if(scrollTop >= 35100){
+        if(scrollTop >= 35000){
 
             $('.name01img').addClass('on');
         }
