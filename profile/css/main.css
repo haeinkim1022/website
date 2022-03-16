@@ -140,7 +140,7 @@ a:link {
 #profile {
   position: fixed;
   width: 100vw;
-  height: 100vh;
+  height: 980px;
   left: 0;
   top: 0;
   background: #f6ebd6;
@@ -156,7 +156,6 @@ a:link {
   justify-content: center;
   position: relative;
   transform: translate(0, 40%);
-  bottom: 0;
 }
 #profile .svg {
   width: 592px;
@@ -174,7 +173,7 @@ a:link {
 #profile .pic {
   position: absolute;
   left: 50%;
-  bottom: 0;
+  bottom: 52px;
   transform: translate(-50%, 0);
   z-index: 9999;
 }
